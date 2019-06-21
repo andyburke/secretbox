@@ -1,0 +1,45 @@
+{
+  "name": "secretbox",
+  "version": "1.0.0",
+  "description": "A place to keep your secrets.",
+  "homepage": "https://github.com/andyburke/secretbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyburke/secretbox.git"
+  },
+  "bugs": "https://github.com/andyburke/secretbox/issues",
+  "main": "index.js",
+  "bin": "./secretbox",
+  "files": [
+    "commands/",
+    "secretbox",
+    "read_from_stdin.js"
+  ],
+  "scripts": {
+    "test": "tape test/**/*.js | tap-spec"
+  },
+  "keywords": [
+    "encryption",
+    "secrets"
+  ],
+  "author": "Andy Burke <andy.burke@mailbox.earth>",
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {
+    "delver": "^1.1.5",
+    "detect-indent": "^6.0.0",
+    "dotenv": "^8.0.0",
+    "extend": "^3.0.2",
+    "traverse": "^0.6.6",
+    "walk-up": "^1.0.2",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
